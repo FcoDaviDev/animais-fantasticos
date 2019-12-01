@@ -1,0 +1,22 @@
+/* li[data-horario].aberto::before{
+    background: green;
+}
+
+li[data-horario].fechado::before{
+    background: red;
+} */
+
+[data-semana]::after{
+    display: inline-block;
+    content: '';
+    border-radius: 50%;
+    height: 6px; 
+    width: 6px;
+    background: #E54;
+    border: 2px solid #000;
+    margin-left: 6px;
+}
+
+[data-semana].aberto::after{
+    background: #3F4;
+}
